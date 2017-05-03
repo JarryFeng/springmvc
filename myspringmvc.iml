@@ -22,25 +22,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="springUse" level="application" />
-    <orderEntry type="library" exported="" scope="PROVIDED" name="Tomcat 7.0.76" level="application_server_libraries" />
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/tools/jar/jstl-1.2.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="jar://D:/tools/jar/standard-1.1.2.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
+    <orderEntry type="library" exported="" name="mylib" level="project" />
+    <orderEntry type="library" exported="" scope="PROVIDED" name="tomcat7" level="application_server_libraries" />
   </component>
 </module>

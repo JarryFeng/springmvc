@@ -4,10 +4,6 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-
-    <!--<mvc:annotation-driven />-->
-    <context:component-scan base-package="com.feng.work.controller" />
-
     <!-- 控制器，处理器 -->
     <bean name="/hello" class="com.feng.work.controller.HelloController"/>
     <bean id="hello1" class="com.feng.work.controller.HelloController1"/>
@@ -35,9 +31,12 @@
 
     <!-- 注解形式实现 -->
     <!-- 注解适配器 -->
-    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter" />
+    <!--<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter" />-->
     <!-- 注解映射器 -->
-    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping" />
+    <!--<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping" />-->
+    <!-- 注册注解驱动，代替上面两句 -->
+    <mvc:annotation-driven />
+    <context:component-scan base-package="com.feng.work.controller" />
 
     <!-- 视图解析器 -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">

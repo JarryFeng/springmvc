@@ -12,7 +12,7 @@ public class HelloController3 {
     @RequestMapping("/hello3")
     //@ResponseBody
     public String method() {
-        return "redirect:/hello ";
+        return "redirect:/hello";
     }
 
 }

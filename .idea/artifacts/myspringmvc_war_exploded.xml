@@ -11,6 +11,7 @@
           <element id="library" level="application" name="springUse" />
           <element id="file-copy" path="D:/tools/jar/jstl-1.2.jar" />
           <element id="file-copy" path="D:/tools/jar/standard-1.1.2.jar" />
+          <element id="library" level="project" name="mylib" />
         </element>
       </element>
     </root>
